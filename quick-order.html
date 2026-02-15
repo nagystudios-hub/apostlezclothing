@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Now - APOSTLE'Z Clothing</title>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+            <div>Achimota, Accra, Ghana</div>
+            <a href="tel:+233XXXXXXXXX">
+                <i data-feather="phone"></i>
+                +233 XX XXX XXXX
+            </a>
+        </div>
+        <nav>
+            <a href="index.html" class="logo">APOSTLE'Z</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="kaftans.html">Kaftans</a></li>
+                <li><a href="agbada.html">Agbada</a></li>
+                <li><a href="menswear.html">Executive Wear</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button class="mobile-toggle" onclick="toggleMenu()">
+                <i data-feather="menu"></i>
+            </button>
+        </nav>
+    </header>
+
+    <div class="page-header">
+        <h1>Place Your Order</h1>
+        <p>Fill in your details and we'll get back to you on WhatsApp</p>
+    </div>
+
+    <section>
+        <div style="max-width: 600px; margin: 0 auto; padding: 2rem; background: #F8F8F8;">
+            <form id="orderForm">
+                <div style="margin-bottom: 1.5rem;">
+                    <label style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Your Name *</label>
+                    <input type="text" id="customerName" required style="width: 100%; padding: 1rem; border: 2px solid #E5E5E5; font-family: 'DM Sans', sans-serif; font-size: 1rem;">
+                </div>
+
+                <div style="margin-bottom: 1.5rem;">
+                    <label style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Phone Number *</label>
+                    <input type="tel" id="customerPhone" required style="width: 100%; padding: 1rem; border: 2px solid #E5E5E5; font-family: 'DM Sans', sans-serif; font-size: 1rem;">
+                </div>
+
+                <div style="margin-bottom: 1.5rem;">
+                    <label style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Product Category *</label>
+                    <select id="category" required style="width: 100%; padding: 1rem; border: 2px solid #E5E5E5; font-family: 'DM Sans', sans-serif; font-size: 1rem;">
+                        <option value="">Select a category</option>
+                        <option value="Premium Kaftan">Premium Kaftan</option>
+                        <option value="Royal Agbada">Royal Agbada</option>
+                        <option value="Executive Menswear">Executive Menswear</option>
+                        <option value="Custom Design">Custom Design</option>
+                    </select>
+                </div>
+
+                <div style="margin-bottom: 1.5rem;">
+                    <label style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Preferred Size</label>
+                    <select id="size" style="width: 100%; padding: 1rem; border: 2px solid #E5E5E5; font-family: 'DM Sans', sans-serif; font-size: 1rem;">
+                        <option value="">Select size (optional)</option>
+                        <option value="S">Small (S)</option>
+                        <option value="M">Medium (M)</option>
+                        <option value="L">Large (L)</option>
+                        <option value="XL">Extra Large (XL)</option>
+                        <option value="XXL">Double XL (XXL)</option>
+                        <option value="Custom">Need Custom Measurements</option>
+                    </select>
+                </div>
+
+                <div style="margin-bottom: 1.5rem;">
+                    <label style="display: block; margin-bottom: 0.5rem; font-weight: 600;">Additional Details</label>
+                    <textarea id="details" rows="4" placeholder="Color preferences, occasion, special requests..." style="width: 100%; padding: 1rem; border: 2px solid #E5E5E5; font-family: 'DM Sans', sans-serif; font-size: 1rem;"></textarea>
+                </div>
+
+                <button type="submit" style="width: 100%; padding: 1.2rem; background: #000; color: #fff; border: none; font-weight: 600; cursor: pointer; font-family: 'DM Sans', sans-serif; font-size: 1.1rem;">
+                    <i data-feather="message-circle" style="width: 20px; height: 20px; margin-right: 8px;"></i>
+                    SEND ORDER VIA WHATSAPP
+                </button>
+            </form>
+
+            <div style="margin-top: 2rem; padding: 1.5rem; background: white; border-left: 4px solid #B8860B;">
+                <p style="margin: 0; color: #666; font-size: 0.95rem;">
+                    <strong>What happens next?</strong><br>
+                    Your order details will be sent to us via WhatsApp. We'll confirm availability, 
+                    discuss pricing, and arrange payment and delivery with you directly.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>APOSTLE'Z Clothing</h3>
+                <p>Premium African menswear combining traditional craftsmanship with modern elegance.</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <a href="index.html">Home</a>
+                <a href="kaftans.html">Kaftans</a>
+                <a href="agbada.html">Agbada</a>
+                <a href="menswear.html">Executive Wear</a>
+            </div>
+
+            <div class="footer-section">
+                <h3>Customer Service</h3>
+                <a href="contact.html">Contact Us</a>
+                <a href="size-guide.html">Size Guide</a>
+                <a href="faq.html">FAQ</a>
+            </div>
+
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <p>Phone: +233 XX XXX XXXX</p>
+                <p>Mon - Sat: 9:00 AM - 6:00 PM</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 APOSTLE'Z Clothing. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        document.getElementById('orderForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const name = document.getElementById('customerName').value;
+            const phone = document.getElementById('customerPhone').value;
+            const category = document.getElementById('category').value;
+            const size = document.getElementById('size').value;
+            const details = document.getElementById('details').value;
+            
+            let message = `*NEW ORDER FROM WEBSITE*%0A%0A`;
+            message += `Name: ${encodeURIComponent(name)}%0A`;
+            message += `Phone: ${encodeURIComponent(phone)}%0A`;
+            message += `Product: ${encodeURIComponent(category)}%0A`;
+            if (size) message += `Size: ${encodeURIComponent(size)}%0A`;
+            if (details) message += `Details: ${encodeURIComponent(details)}`;
+            
+            window.location.href = `https://wa.me/233XXXXXXXXX?text=${message}`;
+        });
+    </script>
+</body>
+</html>
